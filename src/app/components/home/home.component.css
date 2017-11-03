@@ -1,0 +1,48 @@
+#home {
+  background-image: url('../../../assets/marketScientist.png');
+  min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo {
+  position: relative;
+  padding-left: 70px;
+  font-family: 'Saira', sans-serif;
+  color: white;
+}
+#loginSpan {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+}
+.btn-circle {
+  border-radius: 10em;
+  width: 90px;
+  height: 40px;
+  color: #00CDAC;
+}
+
+.btn-circle-long {
+  border-radius: 10em;
+  width: 250px;
+  height: 45px;
+  color: #00CDAC;
+  font-family: 'Saira', sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+#body {
+  position: absolute;
+  right: 0;
+  margin-top: 230px;
+  margin-right: 100px;
+  color:white;
+  text-align: center;
+}

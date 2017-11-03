@@ -1,0 +1,27 @@
+<div style="border-width: 5px; border-color: #00CDAC" class="panel panel-info">
+
+    <!-- Header to show Logo anf Login -->
+    <div class="panel-heading" ><span id="homeButton" routerLink="/"> Market Scientist</span>
+      <span class="left">
+        <span class="left-span underline">Courses</span>
+        <span class="left-span underline">MasterClass</span>
+        <span class="left-span"><button class="btn btn-default btn-circle">Login</button></span>
+      </span>
+    </div>
+
+    <!-- For loop to display all the courses using the variable stored in ts file -->
+    <div class="panel-body">
+      <div  *ngFor="let course of allCourses">
+        <div id="courseName">
+          <h3 style="margin-bottom: 0px"> {{course.name}} <button class="btn btn-default btn-circle-green">Begin</button></h3>
+          <span>{{course.level}}</span>
+        </div>
+        <div class="col-md-offset-1">
+          <div class="lectures col-md-2" *ngFor="let lecture of course.lectures; let i = index">
+             <div class="middle"><span style="font-family: 'Arvo', serif; font-size: 40px;color: grey; opacity: 0.7; font-weight: bold">{{i+1 }}</span><br><b>{{lecture}}</b></div>
+          </div>
+        </div>
+      <div class="row"></div>
+    </div>
+</div>
+
